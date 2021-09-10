@@ -45,6 +45,6 @@ FLASK_RUN_PORT = 5000
 5.6.- Presionamos SEND y esperamos a que se procese el video.
 
 
-### Posibles errores:
+## Posibles errores:
 1.- Error "gcc: error fatal: cannot execute ‘cc1plus’: execvp: No existe el fichero o el directorio"\
 **Solucion**: Instalar el paquete gcc-g++ con el comando `sudo dnf install gcc-g++`
