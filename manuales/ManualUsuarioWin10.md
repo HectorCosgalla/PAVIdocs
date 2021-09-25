@@ -19,7 +19,7 @@
 
 
 ### paso 3: instalar los requerimientos de ambiente
-3.1.- Ejecutamos el entorno virtual con `venv\bin\activate.bat`\
+3.1.- Ejecutamos el entorno virtual con `venv\scripts\activate.bat`\
 3.2.- Ejecutamos el comando `pip install -r requirements-dev.txt`
 > **IMPORTANTE:** En este paso, si no se tiene instalado microsoft visual c++ 14.00 o superior es probable que muestre un error, para solucionarlo consultar la seccion "Posibles errores")
 
