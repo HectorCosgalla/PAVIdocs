@@ -63,9 +63,9 @@ Paso 1: Entrar a la pagina: https://visualstudio.microsoft.com/es/visual-cpp-bui
 Paso 2: Una vez descargado, ejecutamos el instalador y una vez instalado y abierto seleccionamos la opcion `Desarrollo para el escritorio con c++` e instalamos\
 Paso 3: Una vez finalizada la instalacion reiniciamos el equipo y continuamos con la instalacion.
 
-2. Error: pymongo [SSL: CERTIFICATE_VERIFY_FAILED]: certificate has expired on Mongo Atlas
-**Solucion**:
-Paso 1: Descargar el zip del siguiente [link](https://github.com/HectorCosgalla/PAVIdocs/blob/main/archivos/Let'sEncryptCertificates.zip)
-Paso 2: Descomprimirlo e instalar los 3 certificados siguiendo los pasos sin cambiar nada
+2. Error: pymongo [SSL: CERTIFICATE_VERIFY_FAILED]: certificate has expired on Mongo Atlas\
+**Solucion**:\
+Paso 1: Descargar el zip del siguiente [link](https://github.com/HectorCosgalla/PAVIdocs/blob/main/archivos/Let'sEncryptCertificates.zip)\
+Paso 2: Descomprimirlo e instalar los 3 certificados siguiendo los pasos sin cambiar nada.\
 Paso 3: Una vez finalizada la instalacion de los 3 certificados, reiniciar la computadora.
 
