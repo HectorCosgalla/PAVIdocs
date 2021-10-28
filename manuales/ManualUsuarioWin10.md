@@ -5,7 +5,7 @@
 * python 3.8.10 (Se puede instalar directamente de la microsoft store. Aparece como "python 3.8")
 * Microsoft c++ Build Tools
 * Postman (Para el manejo de la API)
-* [Certificados](https://github.com/HectorCosgalla/PAVIdocs/blob/main/manuales/ManualUsuarioWin10.md#Posibles_errores) Let'sEncrypt (x1, x2 y r3)
+* [Certificados](https://github.com/HectorCosgalla/PAVIdocs/blob/main/manuales/ManualUsuarioWin10.md#posibles) Let'sEncrypt (x1, x2 y r3)
 
 > probado en Windows 10
 
