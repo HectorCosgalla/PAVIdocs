@@ -5,13 +5,14 @@
 * python 3.8.10 (Se puede instalar directamente de la microsoft store. Aparece como "python 3.8")
 * Microsoft c++ Build Tools
 * Postman (Para el manejo de la API)
+* [Certificados](https://github.com/HectorCosgalla/PAVIdocs/blob/main/manuales/ManualUsuarioWin10.md#Posibles_errores) Let'sEncrypt (x1, x2 y r3)
 
 > probado en Windows 10
 
 ### paso 1: clonar el repositorio
 1.1.- Abrir la terminal.\
 1.2.- Explorar las carpetas hasta llegar a la carpeta donde se desea clonar el repositorio.\
-1.3.- escribimos el comando `git clone https://github.com/cavesdev/pavi.git` y esperamos a que termine.
+1.3.- escribimos el comando `git clone https://github.com/HectorCosgalla/PAVI_api` y esperamos a que termine.
 
 ### paso 2: instalamos un entorno virtual
 2.1.- Accedemos a la carpeta del repositorio clonado.\
@@ -38,18 +39,33 @@ FLASK_RUN_PORT = 5000
 **Paso opcional (En caso de querer ver como se procesa el video):** Abrir el archivo "yolov4" que se encuentra en la direccion "~/pavi/pavi/services" y en la ultima linea borrar la parte que dice `, no_show=True`\
 4.2.- Ejecutamos la app con el comando `python run.py`
 
-### Paso 5: Procesamos el video.
-5.1.- Abrimos Postman y una vez abierto, generamos una nueva API\
-5.2.- Nos aseguramos que el metodo este en POST dandole click en GET\
-5.3.- En el area de texto a lado del metodo ponemos `localhost:5000/videos`\
-5.4.- En la parte de abajo seleccionamos `Body`\
-5.5.- En la primera KEY seleccionamos "File" y subimos el video a procesar, en la segunda KEY escribimos "algorithm" y en value ponemos "yolov4"\
-5.6.- Presionamos SEND y esperamos a que se procese el video.
+## Uso de la API
+### Procesando el video.
+1. Abrimos el navegador en la pagina `http://localhost:5000/documented_api/doc`
+2. Hacemos click en la pestaña que dice **videos** *Video processing endpoint*
+3. Seleccionamos la pestaña **POST** e inmediatamente en el boton **Try it out**
+4. En la seccion de **video** seleccionamos el video que deseanos procesar
+5. En la seccion **algorithm** no cambiamos nada
+6. Presionamos **Execute** y esperamos a que termine de procesar el video.
+
+### Obteniendo Los resultados
+1. Abrimos el navegador en la pagina `http://localhost:5000/documented_api/doc`\
+2. Hacemos click en la pestaña que dice **videos** *Video processing endpoint*
+3. Seleccionamos la pestaña **GET** e inmediatamente en el boton **Try it out**
+4. En la seccion de **video_id** escribimos en nombre de un video existente en la base de datos (Por ejemplo: Run).
+5. Presionamos **Execute** y esperamos a que tener la lista de resultados.
 
 
 ## Posibles errores:
-1.- Error: "Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ Build Tools":"\
+1. Error: "Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ Build Tools":"\
 **Solucion**: 
 Paso 1: Entrar a la pagina: https://visualstudio.microsoft.com/es/visual-cpp-build-tools/ y descargar Build Tools.\
 Paso 2: Una vez descargado, ejecutamos el instalador y una vez instalado y abierto seleccionamos la opcion `Desarrollo para el escritorio con c++` e instalamos\
 Paso 3: Una vez finalizada la instalacion reiniciamos el equipo y continuamos con la instalacion.
+
+2. Error: pymongo [SSL: CERTIFICATE_VERIFY_FAILED]: certificate has expired on Mongo Atlas
+**Solucion**:
+Paso 1: Descargar el zip del siguiente [link](#)
+Paso 2: Descomprimirlo e instalar los 3 certificados siguiendo los pasos sin cambiar nada
+Paso 3: Una vez finalizada la instalacion de los 3 certificados, reiniciar la computadora.
+
