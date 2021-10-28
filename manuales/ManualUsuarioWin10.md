@@ -5,7 +5,7 @@
 * python 3.8.10 (Se puede instalar directamente de la microsoft store. Aparece como "python 3.8")
 * Microsoft c++ Build Tools
 * Postman (Para el manejo de la API)
-* [Certificados](https://github.com/HectorCosgalla/PAVIdocs/blob/main/manuales/ManualUsuarioWin10.md#posibles) Let'sEncrypt (x1, x2 y r3)
+* [Certificados](https://github.com/HectorCosgalla/PAVIdocs/blob/main/manuales/ManualUsuarioWin10.md#posibles-errores) Let'sEncrypt (x1, x2 y r3)
 
 > probado en Windows 10
 
@@ -65,7 +65,7 @@ Paso 3: Una vez finalizada la instalacion reiniciamos el equipo y continuamos co
 
 2. Error: pymongo [SSL: CERTIFICATE_VERIFY_FAILED]: certificate has expired on Mongo Atlas
 **Solucion**:
-Paso 1: Descargar el zip del siguiente [link](#)
+Paso 1: Descargar el zip del siguiente [link](https://github.com/HectorCosgalla/PAVIdocs/blob/main/archivos/Let'sEncryptCertificates.zip)
 Paso 2: Descomprimirlo e instalar los 3 certificados siguiendo los pasos sin cambiar nada
 Paso 3: Una vez finalizada la instalacion de los 3 certificados, reiniciar la computadora.
 
